@@ -11,15 +11,17 @@ BEGIN
 
      if(ch[i]=" ")
       numwords := numwords + 1;
-     END if
+     END_if
 
      if (ch[i]="a") or (ch[i]="e") or (ch[i]="i") or (ch[i]="o") or (ch[i]="u") or (ch[i]="y") 
       numvowels := numvoyelle + 1 ;
-     END if
+     END_if
 
      if (ch[i] <> ".") 
       numCar := numCar + 1;
-     END if
+     END_if
+     
+    END_While
 
     Write("The number of words is:",numwords);
     Write("The number of vowels is:",numvowels);
